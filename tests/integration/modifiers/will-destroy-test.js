@@ -1,6 +1,8 @@
+import { gte } from 'ember-compatibility-helpers';
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
-import { render } from '@ember/test-helpers';
+import { render, settled } from '@ember/test-helpers';
+import { tracked } from '@glimmer/tracking';
 import hbs from 'htmlbars-inline-precompile';
 
 module('Integration | Modifier | will-destroy', function(hooks) {
